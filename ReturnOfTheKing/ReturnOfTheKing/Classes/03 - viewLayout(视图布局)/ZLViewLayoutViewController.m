@@ -17,10 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titles = @[@"瀑布流布局",@"网易滑动标题"
+    self.titles = @[@"瀑布流布局",@"网易滑动标题",
+                    @"滑动标题"
                     ];
     self.classNames = @[@"ZLWaterflowViewController",
-                        @"ZLNeteaseHomeViewController"];
+                        @"ZLNeteaseHomeViewController",
+                        @"YFSlideTitlesViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

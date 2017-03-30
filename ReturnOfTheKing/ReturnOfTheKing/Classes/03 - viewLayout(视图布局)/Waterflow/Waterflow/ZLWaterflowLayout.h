@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 @class ZLWaterflowLayout;
 @protocol ZLWaterflowLayoutDelegate <NSObject>
-
+/**
+ * 获取item的高度
+ */
 - (CGFloat)waterflowLayout:(ZLWaterflowLayout *)waterflowLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath itemWidth:(CGFloat)itermWidth;
 @optional
 /**
@@ -27,7 +29,7 @@
 /**
  * 返回每列的间距默认是10
  */
-- (CGFloat)columnsInWaterflowLayout:(ZLWaterflowLayout *)waterflowLayout;
+- (CGFloat)columnsMarginInWaterflowLayout:(ZLWaterflowLayout *)waterflowLayout;
 
 @end
 @interface ZLWaterflowLayout : UICollectionViewLayout
