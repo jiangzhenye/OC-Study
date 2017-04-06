@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+    _textField.text = @"23";
     [self.view addSubview:_textField];
     
 }
